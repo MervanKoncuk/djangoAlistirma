@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Birinci yöntem -->
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <!-- İkinci yöntem -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+    <h1>Anasayfa</h1>
+    <!-- Birinci yöntem -->
+    <a href="/hakkimizda/">Hakkımızda sayfasına gider</a>
+    <br>
+    <!-- İkinci yöntem -->
+    <a href="{% url 'about' %}">Hakkımızda</a>
+
+    
+    {% for i in ogr %}
+        <h3><a href="{% url 'detail' i.id %}">{{i.isim}}</a></h3>
+    {% endfor %}
+    <img src="{% static 'img/resim2.jpg' %}" alt="">
+</body>
+</html>

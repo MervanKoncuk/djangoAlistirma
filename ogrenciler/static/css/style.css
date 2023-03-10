@@ -1,0 +1,17 @@
+/* body {
+    background-color: blue;
+    color: white;
+}
+a {
+    color: black;
+} */
+
+h3 a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
