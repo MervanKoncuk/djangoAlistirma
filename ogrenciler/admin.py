@@ -1,4 +1,5 @@
 from django.contrib import admin
 from .models import *
-# Register your models here.
+
+# Oluşturduğumuz modellerin admin panelinde görüntülenebilmesi için gereken komut
 admin.site.register(Ogrenci)

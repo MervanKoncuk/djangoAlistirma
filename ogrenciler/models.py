@@ -4,7 +4,6 @@ from django.db import models
 # tablo oluşturma komutu : makemigrations
 # oluşturulan tabloyu veri tabanına ekleme komutu : migrate
 
-# Create your models here.
 class Ogrenci(models.Model):
     isim = models.CharField(max_length=100) # type text
     aciklama = models.TextField(max_length=300) # textarea

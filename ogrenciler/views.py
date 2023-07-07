@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from .models import *
-# Create your views here.
+# Templates klasörüne koyduğumuz html dosyalarının görüntülenmesini sağlayan fonskiyonlar
 def index(request):
     ogrenciler = Ogrenci.objects.all()
-    # print(ogrenciler)
-    # sozluk = {
+    # print(ogrenciler) # tüm öğrencileri çektik
+    # sozluk = { # aşağıdaki context'in açılımı
     #     'isimler':['Ali', 'Çağla', 'Elif'],
     # }
     # print(sozluk)
